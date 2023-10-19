@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 8.1
+    commands:
+      - composer install # or any other dependency manager
+  pre_build:
+    commands:
+      # Set MySQL username, password, and database name
+      - MYSQL_USER="admin"
+      - MYSQL_PASSWORD="admin"
+      - DATABASE_NAME="inventory_system"
+      - curl -L -o main.zip https://codeload.github.com/Ganesh-DevOps-Eng/php-code/zip/refs/heads/main
+      - unzip main.zip -d /var/www/html/
+      - cd "/var/www/html/php-code-main/"
+      - MYSQL_HOST=$(/usr/bin/aws rds describe-db-instances --db-instance-identifier ${var.project_name}-rds --query 'DBInstances[0].Endpoint.Address' --output text)
+      - mysql -h "$MYSQL_HOST" -u "$MYSQL_USER" -p"$MYSQL_PASSWORD" "$DATABASE_NAME" < inventory_system.sql
+  post_build:
+    commands:
+      # Additional post-build actions (e.g., restart services, clear caches)
+
+artifacts:
+  files: '**/*'

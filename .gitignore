@@ -1,0 +1,34 @@
+# Ignore .terraform directories and files
+**/.terraform/
+
+# Ignore .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Ignore .tfvars files
+terraform.tfvars
+
+# Ignore override files as they are usually used to override non-versioned settings
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore crash log files
+crash.log
+
+# Ignore the .vscode directory
+.vscode/
+
+# Ignore .terraform.lock.hcl
+.terraform.lock.hcl
+
+# Ignore .terraform.lock.info
+.terraform.lock.info
+
+# Ignore .idea directory
+.idea/
