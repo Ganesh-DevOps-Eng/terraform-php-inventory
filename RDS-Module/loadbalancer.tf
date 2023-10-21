@@ -10,18 +10,35 @@ resource "aws_lb" "eb_lb" {
   }
 }
 
+resource "aws_lb_listener" "http_listener" {
+  load_balancer_arn = aws_lb.eb_lb.arn
+  port              = 80
+  protocol          = "HTTP"
+
+  default_action {
+    type = "redirect"
+    
+    redirect {
+      port        = "443"
+      protocol    = "HTTPS"
+      status_code = "HTTP_301"
+    }
+  }
+}
+
 resource "aws_lb_listener" "https_listener" {
   load_balancer_arn = aws_lb.eb_lb.arn
   port              = 443
   protocol          = "HTTPS"
   certificate_arn   = aws_iam_server_certificate.self_signed_cert.arn
-  ssl_policy      = "ELBSecurityPolicy-2016-08"
-  default_action {
-        type = "fixed-response"
+  ssl_policy        = "ELBSecurityPolicy-2016-08"
 
-        fixed_response {
-            content_type = "text/plain"
-            status_code  = "200"
-        }
+  default_action {
+    type = "fixed-response"
+
+    fixed_response {
+      content_type = "text/plain"
+      status_code  = "200"
     }
+  }
 }
