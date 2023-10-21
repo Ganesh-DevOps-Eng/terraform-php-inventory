@@ -30,6 +30,7 @@ provisioner "remote-exec" {
     "cd php-inventory/",
     "mysql -h \"$MYSQL_HOST\" -u \"$MYSQL_USER\" -p\"$MYSQL_PASSWORD\" \"$DATABASE_NAME\" < database/store.sql",
     "# update the .env file on git",
+    "cd php_action/",
     "sed -i \"s/DB_HOST=localhost/DB_HOST=$MYSQL_HOST/\" .env",
     "sed -i \"s/DB_USERNAME=root/DB_USERNAME=$MYSQL_USER/\" .env",
     "sed -i \"s/DB_PASSWORD=root/DB_PASSWORD=$MYSQL_PASSWORD/\" .env",
@@ -46,5 +47,4 @@ provisioner "remote-exec" {
     "# Perform your deployment to Elastic Beanstalk here"
   ]
 }
-
 }
