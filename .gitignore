@@ -6,7 +6,7 @@
 *.tfstate.*
 
 # Ignore .tfvars files
-terraform.tfvars
+#terraform.tfvars
 
 # Ignore override files as they are usually used to override non-versioned settings
 override.tf
