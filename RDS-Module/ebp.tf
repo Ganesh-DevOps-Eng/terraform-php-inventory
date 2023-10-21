@@ -40,13 +40,13 @@ resource "aws_elastic_beanstalk_environment" "eb_env" {
   setting {
     namespace = "aws:ec2:vpc"
     name      = "AssociatePublicIpAddress"
-    value     = "False"
+    value     = "True" #False
   }
 
   setting {
     namespace = "aws:ec2:vpc"
     name      = "Subnets"
-    value     = join(",", module.VPC-Module.private_subnet_ids)
+    value     = join(",", module.VPC-Module.public_subnet_ids)
   }
 
   setting {
