@@ -27,6 +27,28 @@ resource "aws_codepipeline" "codepipeline" {
     }
   }
 
+
+  stage {
+  name = "Build"
+
+  action {
+    name            = "BuildAction"
+    category        = "Build"
+    owner           = "AWS"
+    provider        = "CodeBuild"
+    version         = "1"
+    input_artifacts = ["source_output"]
+
+    configuration = {
+      ProjectName = "your-codebuild-project-name"
+      #SourceType  = "GITHUB"
+      SourceType    = "CODEPIPELINE"
+      #SourceLocation = "https://github.com/yourusername/yourrepository.git" # Replace with your GitHub repository URL
+      SourceLocation = file("buildspec.yml")
+  }
+}
+  }
+
   stage {
     name = "Deploy"
 
