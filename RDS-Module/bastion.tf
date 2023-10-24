@@ -45,7 +45,8 @@ resource "aws_instance" "bastion" {
       "git config --global user.name 'Ganesh-DevOps-Eng'",
       "git remote add origin https://Ganesh-DevOps-Eng:${var.git_pat}@github.com/${var.FullRepositoryId}.git",
       "git push -u origin main",
-      "# Perform your deployment to Elastic Beanstalk here"
+      "# Perform your deployment to Elastic Beanstalk here",
+      "#aws s3 cp s3://elasticbeanstalk-us-east-1-015058543222/.env /var/www/html/"
     ]
   }
 }

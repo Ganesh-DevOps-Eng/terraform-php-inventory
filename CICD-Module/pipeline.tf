@@ -44,4 +44,20 @@ resource "aws_codepipeline" "codepipeline" {
       }
     }
   }
+#     stage {
+#     name = "CopyEnvFile"
+
+#     action {
+#       name            = "CopyEnvFileAction"
+#       category        = "Deploy"
+#       owner           = "Custom"
+#       provider        = "Custom"
+#       version         = "1"
+#       input_artifacts = ["source_output"]
+
+#       configuration = {
+#         Command = "aws s3 cp s3://elasticbeanstalk-us-east-1-015058543222/.env /var/www/html/"
+#       }
+#     }
+# }
 }
