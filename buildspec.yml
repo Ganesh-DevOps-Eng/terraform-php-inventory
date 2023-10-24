@@ -5,7 +5,8 @@ phases:
     commands:
       - echo "Install Composer"
       - curl -sS https://getcomposer.org/installer | php
-      - mv composer.phar /usr/local/bin/composer
+      - sudo mv composer.phar /usr/local/bin/composer
+      - sudo chown webapp:webapp  /usr/local/composer.phar
   build:
     runtime-versions:
       php: 8.1  # Specify the PHP runtime version here
@@ -13,7 +14,7 @@ phases:
       - echo "Running Composer Install"
       - sudo cp .env php_action/
       - cd /var/www/html
-      - composer install
+      - sudo -u webapp composer install
       - php php_action/db_connect.php
       # Add any other necessary commands here
   post_build:
