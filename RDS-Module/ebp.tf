@@ -40,20 +40,20 @@ resource "aws_elastic_beanstalk_environment" "eb_env" {
   setting {
     namespace = "aws:ec2:vpc"
     name      = "AssociatePublicIpAddress"
-    value     = "True" #False
+    value     = "False" #True
   }
 
   setting {
     namespace = "aws:ec2:vpc"
     name      = "Subnets"
-    value     = join(",", module.VPC-Module.public_subnet_ids)
+    value     = join(",", module.VPC-Module.private_subnet_ids)
   }
 
-  setting {
-    namespace = "aws:autoscaling:launchconfiguration"
-    name      = "SecurityGroups"
-    value     = module.VPC-Module.elastic_beanstalk_sg
-  }
+setting {
+  namespace = "aws:autoscaling:launchconfiguration"
+  name      = "SecurityGroups"
+  value     = join(",", [module.VPC-Module.elastic_beanstalk_sg], [module.VPC-Module.alb_sg])
+}
 
   setting {
     namespace = "aws:elasticbeanstalk:environment:process:default"
@@ -120,3 +120,8 @@ resource "aws_elastic_beanstalk_environment" "eb_env" {
 }
 
 
+# Attach the security group to the Elastic Beanstalk instances
+# resource "aws_security_group_attachment" "alb_sg_attachment" {
+#   security_group_id = module.VPC-Module.alb_sg
+#   elastic_beanstalk_environment_name = aws_elastic_beanstalk_environment.eb_env.name
+# }

@@ -1,0 +1,260 @@
+[0m[1mmodule.RDS-Module.tls_private_key.my_private_key: Refreshing state... [id=35b6a85917516ee7fd63e15e0a88e3f307a3c37a][0m
+[0m[1mmodule.RDS-Module.tls_private_key.my_bastion_key: Refreshing state... [id=06a5efb682bc88005bc7b49968727785e6e5c9bb][0m
+[0m[1mmodule.RDS-Module.local_file.private_key: Refreshing state... [id=0bc195d720aeedc2b49c4afd3b3ab522c162c236][0m
+[0m[1mmodule.RDS-Module.tls_self_signed_cert.self_signed_cert: Refreshing state... [id=205490540763017597654213824425735005761][0m
+[0m[1mmodule.RDS-Module.local_file.bastion_key: Refreshing state... [id=a2808b71b98e66bcfc51ef9416c6d16703fb170e][0m
+[0m[1mmodule.RDS-Module.aws_key_pair.bastion_pair: Refreshing state... [id=matelliocorp_bastion_key][0m
+[0m[1mmodule.CICD-Module.aws_iam_role.codepipeline_role: Refreshing state... [id=codepipeline-role][0m
+[0m[1maws_s3_object.tfvars_file: Refreshing state... [id=web-app/terraform.tfvars][0m
+[0m[1maws_s3_object.env_file: Refreshing state... [id=web-app/.env][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_vpc.vpc: Refreshing state... [id=vpc-0a9ca9ff4ccb81e7b][0m
+[0m[1mmodule.RDS-Module.aws_iam_server_certificate.self_signed_cert: Refreshing state... [id=ASCAQHAMPEJ3DT7AAW43E][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.data.aws_availability_zones.available: Reading...[0m[0m
+[0m[1mmodule.RDS-Module.aws_route53_zone.main: Refreshing state... [id=Z0231242EAA4RBH2A33B][0m
+[0m[1mmodule.RDS-Module.aws_key_pair.my_key_pair: Refreshing state... [id=matelliocorp_private_key][0m
+[0m[1mmodule.RDS-Module.aws_elastic_beanstalk_application.eb_app: Refreshing state... [id=matelliocorp-eb-app][0m
+[0m[1mmodule.CICD-Module.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.data.aws_availability_zones.available: Read complete after 2s [id=us-east-1][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_eip.nat_eip[1]: Refreshing state... [id=eipalloc-0f7b64fd54d8e9685][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_eip.nat_eip[0]: Refreshing state... [id=eipalloc-02a3a519c4f6ce780][0m
+[0m[1mmodule.RDS-Module.data.aws_key_pair.bastion_key_pair: Reading...[0m[0m
+[0m[1mmodule.CICD-Module.aws_codepipeline.codepipeline: Refreshing state... [id=my-codepipeline][0m
+[0m[1mmodule.CICD-Module.data.aws_caller_identity.current: Read complete after 1s [id=015058543222][0m
+[0m[1mmodule.RDS-Module.data.aws_key_pair.bastion_key_pair: Read complete after 0s [id=key-0dd21665046b29255][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_security_group.bastion_sg: Refreshing state... [id=sg-04dd865a514a2720a][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_internet_gateway.igw: Refreshing state... [id=igw-0e19b7df17c6d344a][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_subnet.public[1]: Refreshing state... [id=subnet-0fe80a2818cd9bc65][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_subnet.public[0]: Refreshing state... [id=subnet-057e439ecd0b158ae][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_security_group.elastic_beanstalk_sg: Refreshing state... [id=sg-005d5415e075363b9][0m
+[0m[1mmodule.RDS-Module.aws_lb_target_group.eb_tg: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:015058543222:targetgroup/matelliocorp-eb-tg/4ec757c97c22f147][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_security_group.alb_sg: Refreshing state... [id=sg-0b419de292fe2d0b5][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_subnet.private[1]: Refreshing state... [id=subnet-0a81baf5aeb570610][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_subnet.private[0]: Refreshing state... [id=subnet-0712454b271da7684][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_route_table.rtb-public: Refreshing state... [id=rtb-0ba3358758ff52c13][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_nat_gateway.nat-public[1]: Refreshing state... [id=nat-04b8561b46516ee96][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_nat_gateway.nat-public[0]: Refreshing state... [id=nat-01f7fc0dc4234f32e][0m
+[0m[1mmodule.RDS-Module.aws_db_subnet_group.db_sg: Refreshing state... [id=cse-cr][0m
+[0m[1mmodule.RDS-Module.aws_lb.eb_lb: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:015058543222:loadbalancer/app/matelliocorp-load-balancer/2eada2c456faf8b1][0m
+[0m[1mmodule.RDS-Module.aws_instance.bastion: Refreshing state... [id=i-0c7f02456b79068bc][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_security_group.rds_sg: Refreshing state... [id=sg-0aecfe87a5a4d4acc][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_route_table_association.subnet-public_route[1]: Refreshing state... [id=rtbassoc-072d3c90256b34b6b][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_route_table_association.subnet-public_route[0]: Refreshing state... [id=rtbassoc-02608c106b6082270][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_route_table.private_rtb[0]: Refreshing state... [id=rtb-0442701fe4ccae464][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_route_table.private_rtb[1]: Refreshing state... [id=rtb-0313134b5a370e661][0m
+[0m[1mmodule.RDS-Module.aws_elastic_beanstalk_environment.eb_env: Refreshing state... [id=e-udeejqfah6][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_route_table_association.private_subnet_route[0]: Refreshing state... [id=rtbassoc-0e71b56435bc0d961][0m
+[0m[1mmodule.RDS-Module.module.VPC-Module.aws_route_table_association.private_subnet_route[1]: Refreshing state... [id=rtbassoc-07eae318081c02cda][0m
+[0m[1mmodule.RDS-Module.aws_db_instance.rds: Refreshing state... [id=db-EIOYCNSRUWLCUM5CT4PLKI3CEU][0m
+[0m[1mmodule.RDS-Module.aws_route53_record.lb_record: Refreshing state... [id=Z0231242EAA4RBH2A33B_www.matelliocorp.com_A][0m
+[0m[1mmodule.RDS-Module.aws_lb_listener.http_listener: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:015058543222:listener/app/matelliocorp-load-balancer/2eada2c456faf8b1/41e75f8d2430fb48][0m
+[0m[1mmodule.RDS-Module.aws_lb_listener.https_listener: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:015058543222:listener/app/matelliocorp-load-balancer/2eada2c456faf8b1/283208917b2850bd][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+  [33m~[0m update in-place[0m
+
+Terraform will perform the following actions:
+
+[1m  # module.RDS-Module.aws_elastic_beanstalk_environment.eb_env[0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_elastic_beanstalk_environment" "eb_env" {
+        id                     = "e-udeejqfah6"
+        name                   = "matelliocorp-eb-env"
+      [33m~[0m[0m tags                   = {
+          [32m+[0m[0m "Name" = "matelliocorp_eb_app"
+        }
+      [33m~[0m[0m tags_all               = {
+          [32m+[0m[0m "Name" = "matelliocorp_eb_app"
+        }
+        [90m# (15 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "AssociatePublicIpAddress" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:ec2:vpc" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "false" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "EC2KeyName" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:autoscaling:launchconfiguration" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "matelliocorp_private_key" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "ELBScheme" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:ec2:vpc" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "internet facing" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "IamInstanceProfile" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:autoscaling:launchconfiguration" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "IamInstanceProfile_role" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "InstanceType" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:autoscaling:launchconfiguration" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "t3.small" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "ListenerEnabled" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:elbv2:listener:443" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "true" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "LoadBalancerType" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:elasticbeanstalk:environment" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "application" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "MatcherHTTPCode" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:elasticbeanstalk:environment:process:default" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "200" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "MaxSize" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:autoscaling:asg" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "2" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "MinSize" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:autoscaling:asg" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "1" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "Protocol" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:elbv2:listener:443" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "HTTPS" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "SSLCertificateArns" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:elbv2:listener:443" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "arn:aws:iam::015058543222:server-certificate/my-self-signed-cert" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "SecurityGroups" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:autoscaling:launchconfiguration" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "sg-005d5415e075363b9,sg-0b419de292fe2d0b5" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "StreamLogs" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:elasticbeanstalk:cloudwatch:logs" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "true" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "Subnets" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:ec2:vpc" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "subnet-0712454b271da7684,subnet-0a81baf5aeb570610" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "SystemType" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:elasticbeanstalk:healthreporting:system" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "enhanced" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name      = "VPCId" [90m-> null[0m[0m
+          [31m-[0m[0m namespace = "aws:ec2:vpc" [90m-> null[0m[0m
+          [31m-[0m[0m value     = "vpc-0a9ca9ff4ccb81e7b" [90m-> null[0m[0m
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "AssociatePublicIpAddress"
+          [32m+[0m[0m namespace = "aws:ec2:vpc"
+          [32m+[0m[0m value     = "False"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "EC2KeyName"
+          [32m+[0m[0m namespace = "aws:autoscaling:launchconfiguration"
+          [32m+[0m[0m value     = "matelliocorp_private_key"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "ELBScheme"
+          [32m+[0m[0m namespace = "aws:ec2:vpc"
+          [32m+[0m[0m value     = "internet facing"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "IamInstanceProfile"
+          [32m+[0m[0m namespace = "aws:autoscaling:launchconfiguration"
+          [32m+[0m[0m value     = "IamInstanceProfile_role"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "InstanceType"
+          [32m+[0m[0m namespace = "aws:autoscaling:launchconfiguration"
+          [32m+[0m[0m value     = "t3.small"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "ListenerEnabled"
+          [32m+[0m[0m namespace = "aws:elbv2:listener:443"
+          [32m+[0m[0m value     = "true"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "LoadBalancerType"
+          [32m+[0m[0m namespace = "aws:elasticbeanstalk:environment"
+          [32m+[0m[0m value     = "application"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "MatcherHTTPCode"
+          [32m+[0m[0m namespace = "aws:elasticbeanstalk:environment:process:default"
+          [32m+[0m[0m value     = "200"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "MaxSize"
+          [32m+[0m[0m namespace = "aws:autoscaling:asg"
+          [32m+[0m[0m value     = "2"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "MinSize"
+          [32m+[0m[0m namespace = "aws:autoscaling:asg"
+          [32m+[0m[0m value     = "1"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "Protocol"
+          [32m+[0m[0m namespace = "aws:elbv2:listener:443"
+          [32m+[0m[0m value     = "HTTPS"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "SSLCertificateArns"
+          [32m+[0m[0m namespace = "aws:elbv2:listener:443"
+          [32m+[0m[0m value     = "arn:aws:iam::015058543222:server-certificate/my-self-signed-cert"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "SecurityGroups"
+          [32m+[0m[0m namespace = "aws:autoscaling:launchconfiguration"
+          [32m+[0m[0m value     = "sg-005d5415e075363b9,sg-0b419de292fe2d0b5"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "StreamLogs"
+          [32m+[0m[0m namespace = "aws:elasticbeanstalk:cloudwatch:logs"
+          [32m+[0m[0m value     = "true"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "Subnets"
+          [32m+[0m[0m namespace = "aws:ec2:vpc"
+          [32m+[0m[0m value     = "subnet-0712454b271da7684,subnet-0a81baf5aeb570610"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "SystemType"
+          [32m+[0m[0m namespace = "aws:elasticbeanstalk:healthreporting:system"
+          [32m+[0m[0m value     = "enhanced"
+        }
+      [32m+[0m[0m setting {
+          [32m+[0m[0m name      = "VPCId"
+          [32m+[0m[0m namespace = "aws:ec2:vpc"
+          [32m+[0m[0m value     = "vpc-0a9ca9ff4ccb81e7b"
+        }
+    }
+
+[1m  # module.RDS-Module.aws_lb_target_group_attachment.test[0m will be created
+[0m  [32m+[0m[0m resource "aws_lb_target_group_attachment" "test" {
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m port             = 80
+      [32m+[0m[0m target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:015058543222:targetgroup/matelliocorp-eb-tg/4ec757c97c22f147"
+      [32m+[0m[0m target_id        = "e-udeejqfah6"
+    }
+
+[1mPlan:[0m 1 to add, 1 to change, 0 to destroy.
+[0m[0m[1mmodule.RDS-Module.aws_elastic_beanstalk_environment.eb_env: Modifying... [id=e-udeejqfah6][0m[0m
+[0m[1mmodule.RDS-Module.aws_elastic_beanstalk_environment.eb_env: Still modifying... [id=e-udeejqfah6, 10s elapsed][0m[0m
+[0m[1mmodule.RDS-Module.aws_elastic_beanstalk_environment.eb_env: Still modifying... [id=e-udeejqfah6, 20s elapsed][0m[0m
+[0m[1mmodule.RDS-Module.aws_elastic_beanstalk_environment.eb_env: Still modifying... [id=e-udeejqfah6, 30s elapsed][0m[0m
+[0m[1mmodule.RDS-Module.aws_elastic_beanstalk_environment.eb_env: Still modifying... [id=e-udeejqfah6, 40s elapsed][0m[0m
+[0m[1mmodule.RDS-Module.aws_elastic_beanstalk_environment.eb_env: Still modifying... [id=e-udeejqfah6, 50s elapsed][0m[0m
+[0m[1mmodule.RDS-Module.aws_elastic_beanstalk_environment.eb_env: Still modifying... [id=e-udeejqfah6, 1m0s elapsed][0m[0m
+[0m[1mmodule.RDS-Module.aws_elastic_beanstalk_environment.eb_env: Modifications complete after 1m1s [id=e-udeejqfah6][0m
+[0m[1mmodule.RDS-Module.aws_lb_target_group_attachment.test: Creating...[0m[0m
