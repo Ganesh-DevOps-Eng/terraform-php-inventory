@@ -18,7 +18,7 @@ if terraform apply; then
     # Create a new .env file or overwrite an existing one
     cat <<EOF > .env
 DB_HOST = $(terraform output db_host)
-APP_URL = $(terraform output app_url)
+APP_URL = "https://matelliocorp-eb-env.eba-p269wqc2.us-east-1.elasticbeanstalk.com/"
 load_balancer_dns = $(terraform output load_balancer_dns)
 USERNAME=${USERNAME:-default_username}
 PASSWORD=${PASSWORD:-default_password}
