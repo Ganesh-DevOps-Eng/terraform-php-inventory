@@ -20,15 +20,3 @@ variable "git_pat" {}
 variable "ami_id" {}
 variable "root_domain_name" {}
 variable "DATABASE_NAME" {}
-
-variable "upload_env_file" {
-  description = "Set to true to upload the .env file to S3, or false to skip it."
-  type        = bool
-  default     = true  # Set the default value to true if you want to upload by default
-}
-
-variable "upload_tfvars_file" {
-  description = "Set to true to upload the terraform.tfvars file to S3, or false to skip it."
-  type        = bool
-  default     = true  # Set the default value to true if you want to upload by default
-}

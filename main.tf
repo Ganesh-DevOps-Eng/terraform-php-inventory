@@ -8,6 +8,13 @@ terraform {
     region         = "us-east-1"  # Use the appropriate AWS region
   }
 }
+resource "aws_s3_object" "env_file" {
+  bucket = var.s3_location
+  key    = "web-app/.env"
+  source = ".env"
+  etag = "force-update"
+}
+
 module "RDS-Module" {
   source            = "./RDS-Module"
   vpc_cidr_block    = var.vpc_cidr_block

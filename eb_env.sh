@@ -1,9 +1,12 @@
 #!/bin/bash
 
+# Initialize the Terraform configuration (only required once)
+terraform init
+
 # Run `terraform apply` to ensure the outputs are up-to-date and capture the output
-if terraform apply -auto-approve; then
+if terraform apply -var="upload_env_file=true"; then
     # Display the Terraform output from the captured file
-    tee terraform_output.txt
+    terraform output > terraform_output.txt
     cat terraform_output.txt
 
     # Read variables from terraform.tfvars and provide default values if not found
@@ -14,9 +17,9 @@ if terraform apply -auto-approve; then
 
     # Create a new .env file or overwrite an existing one
     cat <<EOF > .env
-DB_HOST = "$(terraform output db_host)"
-APP_URL = "$(terraform output app_url)"
-load_balancer_dns = "$(terraform output load_balancer_dns)"
+DB_HOST = $(terraform output db_host)
+APP_URL = $(terraform output app_url)
+load_balancer_dns = $(terraform output load_balancer_dns)
 USERNAME=${USERNAME:-default_username}
 PASSWORD=${PASSWORD:-default_password}
 DATABASE_NAME=${DATABASE_NAME:-default_database}

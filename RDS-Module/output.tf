@@ -14,6 +14,9 @@ output "load_balancer_dns" {
   value = aws_lb.eb_lb.dns_name
 }
 
+data "aws_elastic_beanstalk_environment" "eb_env" {
+  name = "${var.project_name}-eb-env"
+}
 output "app_url" {
-  value = aws_elastic_beanstalk_environment.eb_env.endpoint_url
+  value = data.aws_elastic_beanstalk_environment.eb_env.endpoint_url
 }

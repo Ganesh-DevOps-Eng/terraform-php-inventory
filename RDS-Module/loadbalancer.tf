@@ -53,6 +53,6 @@ resource "aws_lb_target_group" "eb_tg" {
 
 resource "aws_lb_target_group_attachment" "test" {
   target_group_arn = aws_lb_target_group.eb_tg.arn
-  target_id        = aws_elastic_beanstalk_environment.eb_env.id
+  target_id        = "i-0e1035204f8d26aec"
   port             = 80
 }
