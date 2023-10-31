@@ -4,7 +4,7 @@
 terraform init
 
 # Run `terraform apply` to ensure the outputs are up-to-date and capture the output
-if terraform apply -var="upload_env_file=true"; then
+if terraform apply; then
     # Display the Terraform output from the captured file
     terraform output > terraform_output.txt
     cat terraform_output.txt

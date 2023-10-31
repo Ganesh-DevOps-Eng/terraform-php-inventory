@@ -1,3 +1,3 @@
-app_url = "awseb--AWSEB-dHpOXwjUW54F-1587596674.us-east-1.elb.amazonaws.com"
+app_url = "http://awseb--AWSEB-dHpOXwjUW54F-1587596674.us-east-1.elb.amazonaws.com//"
 db_host = "matelliocorp-rds.cwdkg2gdotxj.us-east-1.rds.amazonaws.com:3306"
 load_balancer_dns = "matelliocorp-load-balancer-1308703134.us-east-1.elb.amazonaws.com"
